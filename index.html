@@ -43,13 +43,13 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/Build.loader.js"></script>
+		<script src="Build/Vortex.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/Build.data",
-				frameworkUrl: "Build/Build.framework.js",
-				codeUrl: "Build/Build.wasm",
+				dataUrl: "Build/Vortex.data",
+				frameworkUrl: "Build/Vortex.framework.js",
+				codeUrl: "Build/Vortex.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "DefaultCompany",
 				productName: "vortex_rumble",
@@ -75,15 +75,15 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 800 / 1200;
+					var r = 1222 / 1922;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 1200;
-					h = 800;
+					w = 1922;
+					h = 1222;
 				}
 
 				container.style.width = canvas.style.width = w + "px";
